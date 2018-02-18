@@ -34,14 +34,14 @@ class Modal extends React.Component {
     return (
         <span>
           <div onClick={this.handleBackdropClick}
-               style={backgroundStyle}>
+               style={backgroundStyle} data-toggle="">
           </div>
           <div id="default-modal" data-toggler="foobar" className={classnames(classes)} data-icon="shopping-cart"
                data-circle-color="alert">
             <h1>This is a modal!</h1>
             <p>Here is some body text.</p>
-            <button className="close-button" data-close aria-label="Close modal" type="button">
-                <span aria-hidden="true" onClick={this.hide} data-toggle="">&times;</span>
+            <button className="close-button" data-close="" aria-label="Close modal" type="button">
+                <span aria-hidden="true" onClick={this.hide}>&times;</span>
             </button>
             {this.props.children}
           </div>
