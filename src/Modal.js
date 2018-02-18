@@ -14,8 +14,8 @@ class Modal extends React.Component {
         <span>
           <div id="default-modal" data-toggler="foobar" className="reveal modal" data-icon="shopping-cart"
                data-circle-color="alert">
-            <h1>This is a modal!</h1>
-            <p>Here is some body text.</p>
+            <h1>{this.props.title}</h1>
+            <p>{this.props.bodyText}</p>
             <button className="close-button" data-close="" aria-label="Close modal" type="button">
                 <span aria-hidden="true">&times;</span>
             </button>

@@ -6,11 +6,10 @@ import Modal from './Modal';
 
 class App extends Component {
 
-  constructor(props){
-    super(props);
-  }
-
   render() {
+
+    const title = "I am a modal"
+    const bodyText = "This is a paragraph in the modal body."
 
     return (
       <div className="App">
@@ -22,7 +21,7 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <button type="button" className="button" data-reveal data-open="default-modal">Click me for a modal!</button>
-        <Modal/>
+        <Modal title={title} bodyText={bodyText}/>
       </div>
     );
   }
