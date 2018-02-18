@@ -8,13 +8,8 @@ class App extends Component {
 
   constructor(props){
     super(props);
-    this.state = {visible: false, ...this.props};
-    this.handleModalClick=this.handleModalClick.bind(this);
   }
 
-  handleModalClick() {
-    this.setState({visible: true})
-  }
   render() {
 
     return (
@@ -27,7 +22,7 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <button type="button" className="button" data-reveal data-open="default-modal">Click me for a modal!</button>
-        <Modal data-nothing/>
+        <Modal/>
       </div>
     );
   }
