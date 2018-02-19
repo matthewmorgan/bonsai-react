@@ -23,10 +23,9 @@ class Modal extends React.Component {
                 <span aria-hidden="true">&times;</span>
             </button>
           </div>
-	      </span>
+        </span>
     )
   }
-
 }
 
 
