@@ -27,7 +27,10 @@ class App extends Component {
           </div>
           <button type="button" className="button" data-reveal data-open="default-modal">Click me for a modal!</button>
           <Modal title={title} bodyText={bodyText}/>
-          <Tooltip/>
+          <Tooltip
+              buttonText={"This does something cool"}
+              buttonTipTitle={"I'm a button tool tip!"}
+              linkTipTitle={"I'm a tooltip!"}/>
         </div>
     )
   }
