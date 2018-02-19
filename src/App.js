@@ -1,9 +1,9 @@
 import React, {Component} from 'react'
 import logo from './logo.svg'
 import './App.css'
-import Modal from './Modal'
-import DropdownMenu from './DropdownMenu'
-import Tooltip from './Tooltip'
+import Modal from './BonsaiWrappers/Modal'
+import DropdownMenu from './BonsaiWrappers/DropdownMenu'
+import Tooltip from './BonsaiWrappers/Tooltip'
 
 
 class App extends Component {
