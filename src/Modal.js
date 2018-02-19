@@ -13,17 +13,15 @@ class Modal extends React.Component {
   render() {
 
     return (
-        <span>
-          <div id="default-modal" data-toggler="foobar" className="reveal modal" data-icon="shopping-cart"
-               data-circle-color="alert">
-            <h1>{this.props.title}</h1>
-            <p>{this.props.bodyText}</p>
-            {/* need the verbose data-close="" to work around an incompatibility between React and Foundation */}
-            <button className="close-button" data-close="" aria-label="Close modal" type="button">
-                <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-        </span>
+        <div id="default-modal" data-toggler="foobar" className="reveal modal" data-icon="shopping-cart"
+             data-circle-color="alert">
+          <h1>{this.props.title}</h1>
+          <p>{this.props.bodyText}</p>
+          {/* need the verbose data-close="" to work around an incompatibility between React and Foundation */}
+          <button className="close-button" data-close="" aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
     )
   }
 }
