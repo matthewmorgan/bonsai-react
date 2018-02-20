@@ -41,7 +41,7 @@ Rename `App.css` to `App.scss` and add two lines to the top:
 2. Initialize the Bonsai component in the `componentDidMount` lifecycle method.
 
 
-#Create React App Boilerplate
+# Create React App Boilerplate
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
