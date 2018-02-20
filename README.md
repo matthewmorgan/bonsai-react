@@ -1,3 +1,49 @@
+# Bonsai-React Integration
+
+Just a simple demo repo to see what integrating Bonsai styling and JS components with a React app would require.
+
+## Requirements
+
+- NodeJS (>=6 please)
+
+```bash
+# Install Create React App
+npm i -g create-react-app
+create-react-app bonsai-react
+# ...it does its thing...
+cd bonsai-react
+```
+
+### Install SASS Preprocessor
+`npm i -D node-sass-chokidar`
+
+### Install Bonsai 
+`npm i --save @ithaka/bonsai`
+
+#### Include SCSS
+Then, add two commands to your `scripts` in `package.json`:
+
+```json
+   "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+   "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive"
+```
+
+The above commands will compile your `.scss` files into `.css` files.
+
+Rename `App.css` to `App.scss` and add two lines to the top:
+```javascript
+@import "@ithaka/bonsai/scss/global";
+@include bonsai;
+```
+
+#### Using JavaScript Components
+
+1. Wrap the Bonsai components in a thin React component.
+2. Initialize the Bonsai component in the `componentDidMount` lifecycle method.
+
+
+#Create React App Boilerplate
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
