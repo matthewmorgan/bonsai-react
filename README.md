@@ -5,12 +5,11 @@ Just a simple demo repo to see what integrating Bonsai styling and JS components
 ## Requirements
 
 - NodeJS (>=6 please)
+- Create project with `create-react-app`
 
 ```bash
-# Install Create React App
 npm i -g create-react-app
 create-react-app bonsai-react
-# ...it does its thing...
 cd bonsai-react
 ```
 
@@ -21,7 +20,7 @@ cd bonsai-react
 `npm i --save @ithaka/bonsai`
 
 #### Include SCSS
-Then, add two commands to your `scripts` in `package.json`:
+Add two commands to your `scripts` in `package.json`:
 
 ```json
    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
